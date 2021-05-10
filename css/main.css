@@ -84,7 +84,7 @@ header, section {
 
 .split {
        display: flex;
-       flex-direction: column;
+       flex-direction: row;
 }
 
 .jumbotron{ 
