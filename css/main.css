@@ -1,0 +1,200 @@
+:root {
+       --clr-primary-200: #c3fcf2;
+       --clr-primary-400: #dbffa2;
+
+       --clr-neutral-100: #FFF;
+       --clr-neutral-900: #00332a;
+       --clr-accent: #ff7750;
+
+       --ff-primary: "Georgia", Georgia;
+       --ff-accent: "Display", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+       box-sizing: border-box;
+}
+
+body {
+       font-family: var(--ff-primary);
+       font-weight: 400;
+       font-size: 1.3125rem;
+       line-height: 1.6;
+}
+
+body, h1, h2, h3, p {
+       margin: 0;
+}
+
+h1, h2, h3 {
+       font-family: var(--ff-accent);
+       font-weight: 900;
+       line-height: 1;
+}
+
+.bg-light {
+       background-image: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+       opacity: 0.9;
+}
+
+.padme {
+       margin-left: 30em;
+       margin-right: 30em;
+       margin-top: 3em;
+       margin-bottom: 3em;
+}
+
+.btm-m {
+       margin-bottom: 1.5em;
+}
+.lgbt {
+	background: linear-gradient(180deg, #FE0000 16.66%,
+		#FD8C00 16.66%, 33.32%,
+		#FFE500 33.32%, 49.98%,
+		#119F0B 49.98%, 66.64%,
+		#0644B3 66.64%, 83.3%,
+		#C22EDC 83.3%);
+}
+
+.bg-primary {
+       background-color: var(--clr-primary-200);
+}
+.bg-dark {
+       background-color: var(--clr-neutral-900);
+}
+
+.text-center {
+       text-align: center;
+}
+
+body {
+       width: 90%;
+       max-width: 1024px;
+       margin: 0 auto;
+}
+
+header, section {
+       padding: 3rem 0;
+}
+
+.container--narrow {
+       max-width: 34rem;
+}
+
+.split {
+       display: flex;
+       flex-direction: column;
+}
+
+.jumbotron{ 
+	background-image: url('path/image.jpg'); 
+	background-size: cover;
+       height:100%;
+	background-repeat: no-repeat; 
+}
+
+h1, h2, h3 {
+       box-shadow: 1px 1px 1px #CCCCCC;
+       margin-bottom: 1em;
+}
+
+img {
+       max-width: 100%;
+       display: block;
+       margin-bottom: .5em;
+}
+
+.text {
+       border: 1px solid black;
+       padding-top: 50px;
+       padding-right: 30px;
+       padding-bottom: 50px;
+       padding-left: 80px;
+}
+
+.topnav         { overflow: hidden; }
+                   
+.topnav a       { float: left;
+                   color: #091557;
+                   text-align: center;
+                   padding: 14px 16px;
+                   text-decoration: none;
+                   font-size: 17px; }
+.topnav a:hover { background-color: #ddd;
+                   color: rgb(213, 14, 253); }
+.topnav a.active { background-color: rgb(12, 12, 12);
+                    color:rgb(213, 14, 253); }
+
+#p01 { float: right;
+       background-repeat: no-repeat; }
+#p02 { float: left;
+       background-repeat: no-repeat; }
+
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  input[type=submit]:hover {
+    background-color: #2e10b1;
+  }
+
+  .container-n {
+    display: flex;
+    padding: 20px; }
+  
+
+@media (min-width: 64em)
+    body { background-color: #FFFFFF;
+           margin: 0; }
+    .wrapper { min-width: 0;
+               width: auto;
+               box-shadow: none;
+               border: none; }
+    header { padding-top: 0.5em;
+             padding-bottom: 0.5em;
+             padding-left: 0;
+             height: auto; }
+    h1  { letter-spacing: 0.1em; }
+    main { margin-left: 0; }
+    nav { float: none;
+          width: auto;
+          text-align: center;
+          padding: 0.5em; }
+    footer { margin-left: 0; }
+}
+@media only screen and (max-width: 37.5em) {
+    h1  { font-size: 2em; }
+    main { padding-top: 0.1em;
+           padding-bottom: 0.1em;
+           padding-left: 1em;
+           padding-right: 1em;
+           font-size: 90%; }
+    nav { padding: 0 }
+    .mobile { display: inline; }
+    .desktop { display: none; }
+    footer { margin-left: 0; }
+
